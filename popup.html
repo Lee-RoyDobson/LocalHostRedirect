@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dev Redirector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <h2>Redirect Settings</h2>
+
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="enableToggle">
+      <span class="slider round"></span>
+    </label>
+    <span class="toggle-label" id="statusText">Off</span>
+  </div>
+
+  <div class="input-group">
+    <label for="interceptHost">Host to Intercept:</label>
+    <input type="text" id="interceptHost" placeholder="e.g. 10.0.10.193">
+  </div>
+
+  <div class="input-group">
+    <label for="targetServer">Local Server Target:</label>
+    <input type="text" id="targetServer" placeholder="e.g. localhost:3000">
+  </div>
+
+  <button id="saveButton">Save Settings</button>
+  <div id="saveMessage" class="hidden">Saved!</div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
